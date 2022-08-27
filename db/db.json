@@ -1,0 +1,28 @@
+{
+  "dados": [
+    {
+      "acomodacao": "Quarto simples",
+      "checkin": "2022-08-26",
+      "checkout": "2022-08-30",
+      "hospedes": 2,
+      "criancas": 0,
+      "id": 2
+    },
+    {
+      "acomodacao": "Quarto simples",
+      "checkin": "2022-08-25",
+      "checkout": "2022-08-30",
+      "hospedes": 1,
+      "criancas": 1,
+      "id": 3
+    },
+    {
+      "acomodacao": "Quarto Duplo",
+      "checkin": "2022-08-31",
+      "checkout": "2022-08-31",
+      "hospedes": 2,
+      "criancas": 2,
+      "id": 4
+    }
+  ]
+}
