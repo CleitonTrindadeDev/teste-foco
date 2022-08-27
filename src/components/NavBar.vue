@@ -1,9 +1,8 @@
 <template>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 px-4 fixed-top">
+      <div class="collapse navbar-collapse  d-flex justify-content-between" id="navbarNavDropdown">
       <img src="../assets/logo.png" alt="">
-      <div class="collapse navbar-collapse  d-flex justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="d-flex">
           <li class="nav-item active">
          <i class="fa fa-regular fa-question p-2 mt-1"></i>
           </li>
@@ -15,7 +14,7 @@
           </li>
           <span class="p-2">Admin</span>
           <li class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
               PF
             </a>
             <div class="dropdown-menu">
@@ -38,5 +37,8 @@ export default {
 </script>
 
 <style scoped>
-
+li {
+  list-style-type: none;
+}
 </style>>
+

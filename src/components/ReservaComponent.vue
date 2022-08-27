@@ -10,7 +10,7 @@
             <td class="col-2"><span>{{dado.criancas}}</span></td>
             <td class="col-2">
 
-            <button type="button" class="btn btn-dark m-1 editar"  data-target="#editar" @click="$emit('editarReserva', dado)"><i class="fa fa-solid fa-pencil"></i></button>
+            <button type="button" class="btn btn-dark m-1 editar"  data-toggle="modal" data-target="#editar" @click="$emit('editarReserva', dado)"><i class="fa fa-solid fa-pencil"></i></button>
             <button type="button" class="btn btn-dark excluir" data-toggle="modal" data-target="#excluir"><i class="fa fa-solid fa-trash"></i></button>
             </td>
             </tr>
@@ -21,17 +21,40 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <h5 class="modal-title" id="exampleModalLabel">Editar dados</h5>
             </div>
             <div class="modal-body">
-              ...
+                <div class="d-block">
+                  <div class="p-2">
+                    <label for="">Acomodação</label>
+                    <select class="form-control">
+                      <option selected disabled value="">Selecione a acomodação</option>
+                      <option>Quarto simples</option>
+                      <option>Quarto Duplo</option>
+                    </select>
+                  </div>
+                  <div class="p-2">
+                    <label for="">Check-in</label>
+                    <input class="form-control" type="date" placeholder="Default input" >
+                  </div>
+                  <div class="p-2">
+                    <label for="">Check-out</label>
+                    <input class="form-control" type="date" placeholder="Default input">
+                  </div>
+                  <div class="p-2">
+                    <label for="">Hospedes(Adultos)</label>
+                    <input class="form-control" type="number" placeholder="Nº Adultos" min="1" max="2">
+                  </div>
+                  <div class="p-2">
+                    <label for="">Crianças</label>
+                    <input class="form-control" type="number" min="0" max="2" placeholder="Nº Crianças">
+                  </div>
+
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Editar</button>
             </div>
           </div>
         </div>
